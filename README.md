@@ -4,7 +4,7 @@ An example of building a FaaS server with NodeJS and Express, with a client base
 
 ![Architecture](architecture.png)
 
-This example shows how to implement a server offering FaaS facilities by using MetaCall with NodeJS, the RPC calls from client look like normal function calls (WIP).
+This example shows how to implement a server offering FaaS facilities by using MetaCall with NodeJS, the RPC calls from client look like normal function calls.
 
 ## Run it
 
