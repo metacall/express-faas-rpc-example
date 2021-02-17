@@ -20,6 +20,7 @@ const load = new Promise((resolve, reject) => {
         files.forEach(file => {
             try {
                 console.log('Loading...', file);
+                // This imports the scripts (Python, Ruby, C#...)
                 require(path.join(scriptsPath, file));
             } catch (ex) {
                 reject(ex);
