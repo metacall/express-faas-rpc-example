@@ -1,4 +1,4 @@
-# MetaCall Express FaaS RPC Example
+# [MetaCall](https://github.com/metacall/core/) Express FaaS RPC Example
 
 An example of building a FaaS server with NodeJS and Express, with a client based on RPC Loader.
 
