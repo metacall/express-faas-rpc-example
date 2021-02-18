@@ -13,18 +13,23 @@ This example shows how to implement a server offering FaaS facilities by using M
     curl -sL https://raw.githubusercontent.com/metacall/install/master/install.sh | sh
     ```
 
-2) In a terminal, run:
+2) Install dependencies:
+    ```sh
+    metacall npm install
+    ```
+
+3) In a terminal, run:
     ```sh
     $ metacall
     λ load node server.js
     ```
 
-3) In another terminal, run:
+4) In another terminal, run:
     ```sh
     metacall client.js
     ```
 
-4) In order to close it, in the server terminal write:
+5) In order to close it, in the server terminal write:
     ```sh
     λ call close()
     λ exit
