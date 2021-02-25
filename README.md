@@ -28,6 +28,11 @@ This example shows how to implement a server offering FaaS facilities by using M
     ```sh
     metacall client.js
     ```
+    Or optionally, with CURL:
+    ```sh
+    curl -X POST -H 'Content-type: application/json' http://localhost:3051/call/sum --data '[3, 4]'
+    curl -X POST -H 'Content-type: application/json' http://localhost:3051/call/mult --data '[2, 3]'
+    ```
 
 5) In order to close it, in the server terminal write:
     ```sh
