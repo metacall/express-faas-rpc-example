@@ -20,10 +20,13 @@ const load = new Promise((resolve, reject) => {
 
         files.forEach(file => {
             try {
-                console.log('Loading...', file);
                 // This imports the scripts (Python, Ruby, C#...)
-                const handle = require(path.join(scriptsPath, file));
-                functions = { ...functions, ...handle };
+                const absolute = path.join(scriptsPath, file);
+                if (!fs.lstatSync(absolute).isDirectory()) {
+                    console.log('Loading...', file);
+                    const handle = require(absolute);
+                    functions = { ...functions, ...handle };
+                }
             } catch (ex) {
                 reject(ex);
             }
